@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<link rel="stylesheet" href="./lib/tau/mobile/theme/default/tau.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<title>Tizen Web IDE - Template - Tizen - Tizen Web UI Framework
+	- Single-Page</title>
+</head>
+
+<body>
+	<div class="ui-page id="main">
+		<div class="ui-header"><h1>Контакты<h1></div>
+			<div class="ui-content">
+				<ul class="ui-listview">
+				</ul>
+			</div>
+			<div id="popupAdd" class="ui-popup" style = "bottom: 10px;">
+     		 	<div id="popupAddHead" class="ui-popup-header">Добавить контакт</div><br>
+      			<div id="popupAddCont" class="ui-popup-content">
+					<input id = "inputName" type="text" name="texttype" id="texttype" placeholder="Введите имя " data-clear-btn="true"/>
+	      			<input id = "inputNumber" type="number" name="texttype" id="texttype" placeholder="Введите номер" data-clear-btn="true"/>
+      				<button id="addButton" type="button" class="ui-btn">Добавить контакт</button>
+      			</div>
+  			 </div>
+  			 <div id="popupChange" class="ui-popup" style = "bottom: 10px;">
+     		 	<div id="popupChangeHead" class="ui-popup-header">Изменить контакт</div><br>
+      			<div id="popupChangeCont" class="ui-popup-content">
+					<input id = "changeName" type="text" name="texttype" id="texttype" placeholder="Введите имя " data-clear-btn="true"/>
+	      			<input id = "changeNumber" type="number" name="texttype" id="texttype" placeholder="Введите номер" data-clear-btn="true"/>
+      				<button id="changeButton" type="button" class="ui-btn">Применить изменения</button>
+      			</div>
+  			 </div>
+			<div id="popup" class="ui-popup" style = "bottom: 10px;">
+			
+     		 	<div id="popupHead" class="ui-popup-header">Popup Page</div><br>
+      			<div id="popupCont" class="ui-popup-content">Popup Content</div><br>
+      			<button id="deleteCont" type="button"  style = "display: inline;"  class="ui-btn">Удалить </button>
+      			<button id="changeCont" style = "display: inline;" type="button" class="ui-btn">Изменить</button>
+      			
+  			</div>
+			<div class="ui-floatingactions" id="floating" style="position:relative; z-index:100; left:230px;" >
+				<button id = "add" class="ui-floatingactions-item"  data-icon="floating-add" />
+			</div>
+	</div>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
